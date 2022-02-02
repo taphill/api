@@ -1,24 +1,3 @@
-# README
+# API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a generic API that I will be using for learning purposes/experimentation with various frontend tools and frameworks. Instead of creating a new API every time I want to try something out that needs some data, I will be using this. With that said, the data contained here will be very random and may not make much sense.
