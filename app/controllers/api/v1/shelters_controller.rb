@@ -22,9 +22,9 @@ module Api
         @shelter = Shelter.new(shelter_params)
 
         if @shelter.save
-          render json: @shelter, status: :created, location: @shelter
+          render json: @shelter, status: :created
         else
-          render json: @shelter.errors, status: :unprocessable_entity
+          render json: { errors: @shelter.errors }, status: :unprocessable_entity
         end
       end
 
