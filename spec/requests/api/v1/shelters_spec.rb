@@ -76,4 +76,21 @@ RSpec.describe 'api/v1/shelters', type: :request do
       end
     end
   end
+
+  # DELETE /shelters/1
+  describe 'DELETE api/v1/shelters/:id' do
+    context 'when successful' do
+      it 'deletes a shelter' do
+        shelter_1 = create(:shelter)
+        shelter_2 = create(:shelter)
+        shelter_3 = create(:shelter)
+
+        expect(Shelter.all.count).to eq(3)
+
+        delete "/api/v1/shelters/#{shelter_1.id}"
+
+        expect(Shelter.all.count).to eq(2)
+      end
+    end
+  end
 end
